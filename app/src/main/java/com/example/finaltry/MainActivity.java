@@ -2,6 +2,7 @@ package com.example.finaltry;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -64,6 +65,9 @@ public class MainActivity<Final> extends AppCompatActivity implements View.OnCli
             map.put("City",adr);
             FirebaseDatabase.getInstance().getReference().child("Details").push().setValue(map);
         }*/
+
+        Intent i=new Intent(this,Examp.class);
+        startActivity(i);
     }
 
 
