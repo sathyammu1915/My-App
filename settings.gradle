@@ -1,0 +1,2 @@
+rootProject.name='Finaltry'
+include ':app'
